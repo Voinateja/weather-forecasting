@@ -1,0 +1,391 @@
+{% extends "base.html" %}
+
+{% block title %}Weather Prediction - AI Weather Forecasting{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="mb-0"><i class="fas fa-cloud-sun-rain"></i> Extreme Weather Prediction</h3>
+            </div>
+            <div class="card-body">
+                <form id="predictionForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="latitude" class="form-label">Latitude</label>
+                            <input type="number" class="form-control" id="latitude" 
+                                   step="0.0001" min="-90" max="90" 
+                                   placeholder="e.g., 40.7128" required>
+                            <small class="text-muted">Range: -90 to 90</small>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="longitude" class="form-label">Longitude</label>
+                            <input type="number" class="form-control" id="longitude" 
+                                   step="0.0001" min="-180" max="180" 
+                                   placeholder="e.g., -74.0060" required>
+                            <small class="text-muted">Range: -180 to 180</small>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="locationName" class="form-label">Location Name (Optional)</label>
+                            <input type="text" class="form-control" id="locationName" 
+                                   placeholder="e.g., New York City">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="days" class="form-label" style="color: var(--text-light);">Forecast Days</label>
+                            <select class="form-control" id="days" disabled style="background-color: #e9ecef; color: #495057;">
+                                <option value="5" selected>5 Days (OpenWeatherMap)</option>
+                            </select>
+                            <small class="text-muted">Fixed 5-day forecast from OpenWeatherMap API</small>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-chart-line"></i> Generate Prediction
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Loading Spinner -->
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p class="mt-3" style="color: #fff;">Generating predictions using AI models...</p>
+                </div>
+                
+                <!-- Error Message -->
+                <div class="alert alert-danger mt-4" id="errorAlert" style="display: none;">
+                    <i class="fas fa-exclamation-triangle"></i> 
+                    <span id="errorMessage"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Prediction Results -->
+<div class="row mt-4" id="resultsSection" style="display: none;">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="mb-0">
+                    <i class="fas fa-cloud-sun-rain"></i> 5-Day Weather Forecast
+                </h3>
+                <p class="mb-0 mt-2" style="font-size: 0.95rem; color: var(--text-muted);">
+                    <span id="locationDisplay"></span>
+                </p>
+            </div>
+            <div class="card-body">
+                <div id="predictionResults"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Location Examples -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0"><i class="fas fa-map-marker-alt"></i> Quick Location Examples</h4>
+            </div>
+            <div class="card-body p-4">
+                <div class="row g-3">
+                    <div class="col-md-3 col-sm-6">
+                        <button class="btn btn-outline-primary w-100 location-btn py-3" 
+                                onclick="setLocation(40.7128, -74.0060, 'New York City')">
+                            <i class="fas fa-city fs-3 mb-2"></i><br>
+                            <strong>New York City</strong><br>
+                            <small style="color: #94a3b8;">40.71°N, 74.01°W</small>
+                        </button>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <button class="btn btn-outline-primary w-100 location-btn py-3" 
+                                onclick="setLocation(34.0522, -118.2437, 'Los Angeles')">
+                            <i class="fas fa-sun fs-3 mb-2"></i><br>
+                            <strong>Los Angeles</strong><br>
+                            <small style="color: #94a3b8;">34.05°N, 118.24°W</small>
+                        </button>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <button class="btn btn-outline-primary w-100 location-btn py-3" 
+                                onclick="setLocation(51.5074, -0.1278, 'London')">
+                            <i class="fas fa-cloud fs-3 mb-2"></i><br>
+                            <strong>London</strong><br>
+                            <small style="color: #94a3b8;">51.51°N, 0.13°W</small>
+                        </button>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <button class="btn btn-outline-primary w-100 location-btn py-3" 
+                                onclick="setLocation(35.6762, 139.6503, 'Tokyo')">
+                            <i class="fas fa-cloud-rain fs-3 mb-2"></i><br>
+                            <strong>Tokyo</strong><br>
+                            <small style="color: #94a3b8;">35.68°N, 139.65°E</small>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .location-btn {
+        height: 100%;
+        transition: all 0.3s ease;
+    }
+    
+    .location-btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+    }
+    
+    /* Ensure prediction cards have proper text visibility */
+    #predictionResults .card {
+        background: var(--card-bg);
+        color: var(--text-light);
+    }
+    
+    #predictionResults .card-title {
+        color: var(--text-light);
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    #predictionResults .card-title small {
+        display: block;
+        color: var(--text-muted);
+        font-size: 0.85rem;
+        margin-top: 0.25rem;
+    }
+    
+    #predictionResults h6 {
+        color: var(--text-light);
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+    
+    #predictionResults ul li {
+        color: var(--text-light);
+        padding: 0.4rem 0;
+    }
+    
+    #predictionResults ul li i {
+        color: var(--primary-color);
+        margin-right: 0.5rem;
+        width: 20px;
+    }
+    
+    #predictionResults hr {
+        border-color: rgba(255, 255, 255, 0.1);
+        margin: 1rem 0;
+    }
+    
+    #predictionResults .small {
+        color: var(--text-light);
+    }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    function setLocation(lat, lon, name) {
+        document.getElementById('latitude').value = lat;
+        document.getElementById('longitude').value = lon;
+        document.getElementById('locationName').value = name;
+    }
+    
+    document.getElementById('predictionForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const latitude = parseFloat(document.getElementById('latitude').value);
+        const longitude = parseFloat(document.getElementById('longitude').value);
+        const locationName = document.getElementById('locationName').value;
+        const days = parseInt(document.getElementById('days').value);
+        
+        // Show loading
+        document.getElementById('loading').style.display = 'block';
+        document.getElementById('errorAlert').style.display = 'none';
+        document.getElementById('resultsSection').style.display = 'none';
+        
+        try {
+            const response = await fetch('/api/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    latitude: latitude,
+                    longitude: longitude,
+                    location_name: locationName,
+                    days: days
+                })
+            });
+            
+            if (!response.ok) {
+                const errorData = await response.json();
+                showError(errorData.error || 'An error occurred');
+                return;
+            }
+            
+            const data = await response.json();
+            console.log('Response data:', data);
+            
+            if (data.success) {
+                try {
+                    displayResults(data);
+                } catch (displayError) {
+                    console.error('Error displaying results:', displayError);
+                    showError('Error displaying results: ' + displayError.message);
+                }
+            } else {
+                showError(data.error || 'An error occurred');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            showError('Failed to connect to the server: ' + error.message);
+        } finally {
+            document.getElementById('loading').style.display = 'none';
+        }
+    });
+    
+    function showError(message) {
+        document.getElementById('errorMessage').textContent = message;
+        document.getElementById('errorAlert').style.display = 'block';
+    }
+    
+    function displayResults(data) {
+        console.log('Displaying results:', data);
+        
+        const location = data.location;
+        const predictions = data.predictions;
+        
+        if (!predictions || predictions.length === 0) {
+            showError('No prediction data received');
+            return;
+        }
+        
+        // Update location display with sunrise/sunset info
+        let locationText = `📍 ${location.name}`;
+        if (location.country) {
+            locationText += `, ${location.country}`;
+        }
+        if (location.sunrise && location.sunset) {
+            locationText += ` | 🌅 ${location.sunrise} | 🌇 ${location.sunset}`;
+        }
+        document.getElementById('locationDisplay').innerHTML = locationText;
+        
+        // Build results HTML with OpenWeatherMap data
+        let html = '<div class="row">';
+        
+        predictions.forEach((pred, index) => {
+            // Get weather icon from OpenWeatherMap
+            const iconUrl = `https://openweathermap.org/img/wn/${pred.weather_icon}@2x.png`;
+            
+            html += `
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <img src="${iconUrl}" alt="${pred.weather_description}" style="width: 50px; height: 50px; margin-right: 10px; vertical-align: middle;">
+                                Day ${pred.day_offset + 1}
+                                <small>${pred.date}</small>
+                            </h5>
+                            
+                            <div class="text-center mb-3 py-3" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%); border-radius: 8px;">
+                                <h3 class="mb-1" style="color: var(--text-light); font-size: 2rem;">
+                                    ${pred.temperature}°C
+                                </h3>
+                                <p class="mb-0" style="color: var(--text-light);">
+                                    Feels like ${pred.feels_like}°C
+                                </p>
+                                <p class="mb-0 mt-2" style="color: var(--text-light);">
+                                    <i class="fas fa-cloud"></i> ${pred.weather_description}
+                                </p>
+                            </div>
+                            
+                            <hr>
+                            
+                            <h6 style="color: var(--text-light);"><i class="fas fa-thermometer-half me-2"></i>Temperature Range:</h6>
+                            <ul class="list-unstyled mb-3" style="color: var(--text-light);">
+                                <li><i class="fas fa-temperature-high text-danger"></i> Max: <strong>${pred.temp_max}°C</strong></li>
+                                <li><i class="fas fa-temperature-low text-info"></i> Min: <strong>${pred.temp_min}°C</strong></li>
+                            </ul>
+                            
+                            <h6 style="color: var(--text-light);"><i class="fas fa-info-circle me-2"></i>Weather Details:</h6>
+                            <ul class="list-unstyled" style="color: var(--text-light);">
+                                <li><i class="fas fa-tint"></i> Humidity: <strong>${pred.humidity}%</strong></li>
+                                <li><i class="fas fa-compress-arrows-alt"></i> Pressure: <strong>${pred.pressure} hPa</strong></li>
+                                <li><i class="fas fa-wind"></i> Wind: <strong>${pred.wind_speed} m/s, ${pred.wind_deg}°</strong></li>
+                                <li><i class="fas fa-cloud"></i> Cloudiness: <strong>${pred.cloudiness}%</strong></li>
+                                <li><i class="fas fa-eye"></i> Visibility: <strong>${pred.visibility !== 'N/A' ? pred.visibility + ' m' : 'N/A'}</strong></li>
+                                ${pred.precipitation > 0 ? `<li><i class="fas fa-cloud-rain"></i> Precipitation: <strong>${pred.precipitation} mm</strong></li>` : ''}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+        
+        html += '</div>';
+        
+        document.getElementById('predictionResults').innerHTML = html;
+        document.getElementById('resultsSection').style.display = 'block';
+        
+        // Scroll to results
+        document.getElementById('resultsSection').scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    function getEventColor(event) {
+        const colors = {
+            'heatwave': 'danger',
+            'storm': 'primary',
+            'flood': 'info',
+            'normal': 'success'
+        };
+        return colors[event] || 'secondary';
+    }
+    
+    function getEventIcon(event) {
+        const icons = {
+            'heatwave': 'fas fa-temperature-high text-danger',
+            'storm': 'fas fa-wind text-primary',
+            'flood': 'fas fa-cloud-showers-heavy text-info',
+            'normal': 'fas fa-cloud-sun text-success'
+        };
+        return icons[event] || 'fas fa-cloud';
+    }
+    
+    function generateRiskBadges(events) {
+        if (!events || typeof events !== 'object') {
+            return '<p class="text-muted">No risk data available</p>';
+        }
+        
+        let html = '';
+        for (const [eventType, data] of Object.entries(events)) {
+            if (!data || typeof data !== 'object') continue;
+            
+            const prob = Math.round((data.probability || 0) * 100);
+            const riskLevel = data.risk_level || 'minimal';
+            const capitalizedEvent = eventType.charAt(0).toUpperCase() + eventType.slice(1);
+            const capitalizedRisk = riskLevel.charAt(0).toUpperCase() + riskLevel.slice(1);
+            
+            html += `
+                <div class="mb-2 d-flex justify-content-between align-items-center">
+                    <strong style="color: var(--text-light);">${capitalizedEvent}:</strong>
+                    <span class="risk-badge risk-${riskLevel}" style="font-size: 0.75rem; padding: 0.35rem 0.85rem;">
+                        ${prob}% ${capitalizedRisk}
+                    </span>
+                </div>
+            `;
+        }
+        return html || '<p class="text-muted">No risk data available</p>';
+    }
+</script>
+{% endblock %}

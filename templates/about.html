@@ -1,0 +1,218 @@
+{% extends "base.html" %}
+
+{% block title %}About - AI Weather Forecasting{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="mb-0"><i class="fas fa-info-circle"></i> About This Research Project</h3>
+            </div>
+            <div class="card-body">
+                <h4 style="color: var(--text-light);">Research Proposal: AI-Driven Climate Forecasting for Extreme Weather Prediction</h4>
+                
+                <h5 class="mt-4" style="color: var(--text-light);">Project Title</h5>
+                <p class="lead" style="color: var(--text-light);">
+                    "Using AI-Driven Climate Forecasting Models for Enhancing Extreme Weather Event Prediction"
+                </p>
+                
+                <h5 class="mt-4" style="color: var(--text-light);">Research Objectives</h5>
+                <p style="color: var(--text-light);">
+                    This study utilizes artificial intelligence for enhancing the quality and reliability 
+                    of short-term extreme weather forecasting, with applications to heatwave, storm, and 
+                    flood scenarios.
+                </p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h5 style="color: var(--text-light);">Key Research Questions</h5>
+                        <ul style="color: var(--text-light);">
+                            <li>Do AI-accommodated weather models contribute notably to the forecast accuracy 
+                                of short-term (1-7 day) extreme weather events?</li>
+                            <li>How do machine learning models compare to physics-based models in identifying 
+                                early signals of extreme weather?</li>
+                            <li>What limitations do AI models have concerning computational cost, 
+                                interpretability, and generalizability?</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="color: var(--text-light);">Event Types Predicted</h5>
+                        <ul style="color: var(--text-light);">
+                            <li><strong>Heatwaves:</strong> Temperature exceeding 35°C threshold</li>
+                            <li><strong>Storms:</strong> Wind speeds exceeding 63 km/h</li>
+                            <li><strong>Floods:</strong> Heavy precipitation (>50mm per day)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h5 class="mt-4" style="color: var(--text-light);">Methodology</h5>
+                <p style="color: var(--text-light);">
+                    This study adopts a hybrid experimental approach combining advanced machine learning 
+                    and AI-integrated analysis for predicting short-term extreme weather events.
+                </p>
+                
+                <div class="card bg-light mt-3">
+                    <div class="card-body">
+                        <h6 style="color: #333;">Data Sources:</h6>
+                        <ul class="mb-0" style="color: #333;">
+                            <li><strong>OpenWeatherMap</strong> - Real-time weather data API</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <h5 class="mt-4" style="color: var(--text-light);">Machine Learning Models</h5>
+                <div class="row mt-3">
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 bg-light">
+                            <div class="card-body">
+                                <h6 style="color: #333;"><i class="fas fa-brain"></i> Bi-LSTM Networks</h6>
+                                <p class="small mb-0" style="color: #333;">
+                                    Bidirectional Long Short-Term Memory networks for capturing 
+                                    temporal dependencies and sequential patterns in weather data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 bg-light">
+                            <div class="card-body">
+                                <h6 style="color: #333;"><i class="fas fa-chart-line"></i> LightGBM</h6>
+                                <p class="small mb-0" style="color: #333;">
+                                    Fast gradient boosting framework for efficient and scalable 
+                                    classification with feature importance capabilities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card h-100 bg-light">
+                            <div class="card-body">
+                                <h6 style="color: #333;"><i class="fas fa-tree"></i> Extra Trees</h6>
+                                <p class="small mb-0" style="color: #333;">
+                                    Ensemble learning method providing robust classification 
+                                    through extremely randomized decision trees.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 bg-light">
+                            <div class="card-body">
+                                <h6 style="color: #333;"><i class="fas fa-project-diagram"></i> LSTM Networks</h6>
+                                <p class="small mb-0" style="color: #333;">
+                                    Standard LSTM architecture for time series forecasting and 
+                                    temporal pattern recognition in weather sequences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card h-100 bg-light">
+                            <div class="card-body">
+                                <h6 style="color: #333;"><i class="fas fa-layer-group"></i> Temporal Fusion Transformer</h6>
+                                <p class="small mb-0" style="color: #333;">
+                                    Advanced attention-based model for multi-horizon forecasting 
+                                    with interpretable feature importance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h5 class="mt-4" style="color: var(--text-light);">Expected Outcomes</h5>
+                <ul style="color: var(--text-light);">
+                    <li>Quantifiable improvements in extreme weather prediction accuracy</li>
+                    <li>Trained machine learning models for operational forecasting</li>
+                    <li>Comparative analysis demonstrating ML performance advantages</li>
+                    <li>Framework for integrating AI insights with traditional weather data</li>
+                    <li>Practical tools for meteorological agencies and disaster management</li>
+                </ul>
+                
+                <h5 class="mt-4" style="color: var(--text-light);">Performance Metrics</h5>
+                <p style="color: var(--text-light);">
+                    Model performance is evaluated using standard classification metrics:
+                </p>
+                <ul style="color: var(--text-light);">
+                    <li><strong>Accuracy:</strong> Overall prediction correctness</li>
+                    <li><strong>Precision:</strong> Proportion of correct positive predictions</li>
+                    <li><strong>Recall:</strong> Proportion of actual positives correctly identified</li>
+                    <li><strong>F1-Score:</strong> Harmonic mean of precision and recall</li>
+                    <li><strong>RMSE:</strong> Root Mean Square Error for regression tasks</li>
+                </ul>
+                
+                <div class="card bg-info text-white mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-graduation-cap"></i> Research Timeline
+                        </h5>
+                        <p class="mb-0">
+                            <strong>Duration:</strong> 4 months<br>
+                            <strong>Phase 1 (Month 1-3):</strong> Data collection, model development, and initial testing<br>
+                            <strong>Phase 2 (Month 4):</strong> Complete validation, analysis, and report compilation
+                        </p>
+                    </div>
+                </div>
+                
+                <h5 class="mt-4" style="color: var(--text-light);">References</h5>
+                <div class="small" style="color: var(--text-light);">
+                    <ol>
+                        <li>G. Camps-Valls et al. (2025). "Deep learning methods for extreme weather predictions."</li>
+                        <li>B. Jiménez-Esteve et al. (2024). "AI attribution methods for climate extremes."</li>
+                        <li>L. Xu et al. (2024). "Pangu-Weather: Hybrid AI-numerical models for extreme precipitation."</li>
+                        <li>World Meteorological Organization. "Standards for extreme weather event classification."</li>
+                    </ol>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="/predict" class="btn btn-primary btn-lg">
+                        <i class="fas fa-rocket"></i> Try the Prediction System
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Technical Details -->
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0"><i class="fas fa-cogs"></i> Technical Stack</h4>
+            </div>
+            <div class="card-body">
+                <ul style="color: var(--text-light);">
+                    <li><strong>Backend:</strong> Python Flask</li>
+                    <li><strong>ML Framework:</strong> TensorFlow, Keras, Scikit-learn</li>
+                    <li><strong>Gradient Boosting:</strong> LightGBM</li>
+                    <li><strong>Ensemble Methods:</strong> Random Forest, Extra Trees</li>
+                    <li><strong>Data Processing:</strong> Pandas, NumPy</li>
+                    <li><strong>Visualization:</strong> Plotly, Matplotlib, Chart.js</li>
+                    <li><strong>Database:</strong> SQLAlchemy (SQLite/PostgreSQL)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0"><i class="fas fa-database"></i> Data Features</h4>
+            </div>
+            <div class="card-body">
+                <ul style="color: var(--text-light);">
+                    <li>Temperature and anomalies</li>
+                    <li>Atmospheric pressure and changes</li>
+                    <li>Wind speed and direction</li>
+                    <li>Precipitation patterns</li>
+                    <li>Humidity levels</li>
+                    <li>Cloud cover</li>
+                    <li>Temporal features (hour, day, season)</li>
+                    <li>Rolling statistics and trends</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

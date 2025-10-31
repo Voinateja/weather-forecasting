@@ -1,0 +1,599 @@
+2025-10-22 12:44:28,457 - app - INFO - Application started
+2025-10-22 12:45:06,982 - app - INFO - Application started
+2025-10-22 12:47:08,599 - app - INFO - Application started
+2025-10-22 12:48:19,030 - app - INFO - Application started
+2025-10-22 12:48:28,169 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 12:48:28,169 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 12:48:28,170 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 12:48:28,566 - app - INFO - Application started
+2025-10-22 12:48:35,094 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 12:48:35,110 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 12:48:55,261 - app - INFO - Application started
+2025-10-22 12:49:03,604 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 12:49:03,604 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 12:49:03,605 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 12:49:03,977 - app - INFO - Application started
+2025-10-22 12:49:10,971 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 12:49:10,996 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 12:50:19,135 - app - INFO - Application started
+2025-10-22 12:50:27,769 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 12:50:27,769 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 12:50:27,770 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 12:50:28,143 - app - INFO - Application started
+2025-10-22 12:50:34,568 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 12:50:34,585 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 13:06:25,130 - app - INFO - Application started
+2025-10-22 13:06:33,215 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 13:06:33,215 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 13:06:33,216 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 13:06:33,587 - app - INFO - Application started
+2025-10-22 13:06:40,006 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 13:06:40,019 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 13:08:44,089 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:08:44] "GET / HTTP/1.1" 200 -
+2025-10-22 13:17:55,967 - app - INFO - Application started
+2025-10-22 13:18:04,215 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 13:18:04,215 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 13:18:04,216 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 13:18:04,594 - app - INFO - Application started
+2025-10-22 13:18:11,227 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 13:18:11,244 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 13:18:11,291 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:18:11] "GET /predict HTTP/1.1" 200 -
+2025-10-22 13:18:16,893 - ml.predictor - INFO - Loaded LightGBM models
+2025-10-22 13:18:16,894 - ml.predictor - INFO - Loaded Extra Trees models
+2025-10-22 13:18:17,517 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:18:17,520 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 13:18:17,527 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:18:17,527 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 13:18:17,533 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:18:17,533 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 13:18:17,539 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:18:17,539 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 13:18:17,544 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:18:17,544 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 13:18:17,545 - ml.predictor - INFO - Generated 5 predictions for New York City
+2025-10-22 13:18:17,545 - routes - INFO - Generated predictions for New York City
+2025-10-22 13:18:17,545 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:18:17] "POST /api/predict HTTP/1.1" 200 -
+2025-10-22 13:18:22,254 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:18:22] "GET /dashboard HTTP/1.1" 200 -
+2025-10-22 13:18:22,299 - routes - ERROR - Error fetching model performance: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 13:18:22,299 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:18:22] "[35m[1mGET /api/models/performance HTTP/1.1[0m" 500 -
+2025-10-22 13:18:22,300 - routes - ERROR - Error fetching prediction history: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 13:18:22,301 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:18:22] "[35m[1mGET /api/predictions/history?limit=20 HTTP/1.1[0m" 500 -
+2025-10-22 13:45:38,855 - app - INFO - Application started
+2025-10-22 13:45:47,111 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 13:45:47,112 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 13:45:47,113 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 13:45:47,491 - app - INFO - Application started
+2025-10-22 13:45:54,556 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 13:45:54,570 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 13:46:48,043 - app - INFO - Application started
+2025-10-22 13:46:56,991 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 13:46:56,992 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 13:46:56,993 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 13:46:57,378 - app - INFO - Application started
+2025-10-22 13:47:03,859 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 13:47:03,872 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 13:48:24,024 - app - INFO - Application started
+2025-10-22 13:48:31,935 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 13:48:31,935 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 13:48:31,936 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 13:48:32,312 - app - INFO - Application started
+2025-10-22 13:48:38,890 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 13:48:38,909 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 13:48:38,956 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:48:38] "GET /about HTTP/1.1" 200 -
+2025-10-22 13:48:47,658 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:48:47] "GET /predict HTTP/1.1" 200 -
+2025-10-22 13:48:51,966 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:48:51] "GET /dashboard HTTP/1.1" 200 -
+2025-10-22 13:48:52,021 - routes - ERROR - Error fetching model performance: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 13:48:52,022 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:48:52] "[35m[1mGET /api/models/performance HTTP/1.1[0m" 500 -
+2025-10-22 13:48:52,023 - routes - ERROR - Error fetching prediction history: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 13:48:52,024 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:48:52] "[35m[1mGET /api/predictions/history?limit=20 HTTP/1.1[0m" 500 -
+2025-10-22 13:49:11,057 - ml.predictor - INFO - Loaded LightGBM models
+2025-10-22 13:49:11,058 - ml.predictor - INFO - Loaded Extra Trees models
+2025-10-22 13:49:11,597 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:49:11,598 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 13:49:11,604 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:49:11,605 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 13:49:11,611 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:49:11,611 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 13:49:11,617 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:49:11,617 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 13:49:11,623 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:49:11,623 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 13:49:11,623 - ml.predictor - INFO - Generated 5 predictions for New York City
+2025-10-22 13:49:11,623 - routes - INFO - Generated predictions for New York City
+2025-10-22 13:49:11,624 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:49:11] "POST /api/predict HTTP/1.1" 200 -
+2025-10-22 13:49:17,366 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:49:17] "GET /predict HTTP/1.1" 200 -
+2025-10-22 13:49:21,403 - ml.predictor - INFO - Loaded LightGBM models
+2025-10-22 13:49:21,403 - ml.predictor - INFO - Loaded Extra Trees models
+2025-10-22 13:49:23,240 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:49:23,241 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 13:49:23,247 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:49:23,247 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 13:49:23,252 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:49:23,252 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 13:49:23,258 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:49:23,258 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 13:49:23,264 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 13:49:23,264 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 13:49:23,265 - ml.predictor - INFO - Generated 5 predictions for New York City
+2025-10-22 13:49:23,265 - routes - INFO - Generated predictions for New York City
+2025-10-22 13:49:23,265 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 13:49:23] "POST /api/predict HTTP/1.1" 200 -
+2025-10-22 21:32:50,005 - app - INFO - Application started
+2025-10-22 21:33:13,769 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 21:33:13,770 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 21:33:13,771 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 21:33:14,189 - app - INFO - Application started
+2025-10-22 21:33:20,991 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 21:33:21,011 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 21:35:18,561 - app - INFO - Application started
+2025-10-22 21:35:27,141 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 21:35:27,141 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 21:35:27,142 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 21:35:27,520 - app - INFO - Application started
+2025-10-22 21:35:33,623 - app - INFO - Application started
+2025-10-22 21:35:40,763 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 21:35:40,763 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 21:35:40,764 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 21:35:41,091 - app - INFO - Application started
+2025-10-22 21:38:30,517 - app - INFO - Application started
+2025-10-22 21:38:38,931 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 21:38:38,931 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 21:38:38,932 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 21:38:39,353 - app - INFO - Application started
+2025-10-22 21:38:47,631 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 21:38:47,728 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 21:38:47,779 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:38:47] "GET / HTTP/1.1" 200 -
+2025-10-22 21:38:48,386 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:38:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-22 21:39:04,119 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:39:04] "GET /predict HTTP/1.1" 200 -
+2025-10-22 21:39:39,466 - app - INFO - Application started
+2025-10-22 21:39:47,686 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 21:39:47,686 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 21:39:47,687 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 21:39:48,067 - app - INFO - Application started
+2025-10-22 21:40:55,681 - app - INFO - Application started
+2025-10-22 21:41:03,944 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 21:41:03,944 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 21:41:03,945 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 21:41:04,388 - app - INFO - Application started
+2025-10-22 21:41:12,183 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 21:41:12,199 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 21:41:12,254 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:41:12] "GET /predict HTTP/1.1" 200 -
+2025-10-22 21:42:05,549 - ml.predictor - INFO - Loaded LightGBM models
+2025-10-22 21:42:05,550 - ml.predictor - INFO - Loaded Extra Trees models
+2025-10-22 21:42:06,150 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:42:06,155 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 21:42:06,162 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:42:06,162 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:42:06,169 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:42:06,169 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:42:06,175 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:42:06,175 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:42:06,181 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:42:06,181 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:42:06,181 - ml.predictor - INFO - Generated 5 predictions for New York City
+2025-10-22 21:42:06,181 - routes - INFO - Generated predictions for New York City
+2025-10-22 21:42:06,182 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:42:06] "POST /api/predict HTTP/1.1" 200 -
+2025-10-22 21:45:32,195 - app - INFO - Application started
+2025-10-22 21:45:41,274 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 21:45:41,274 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 21:45:41,275 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 21:45:41,698 - app - INFO - Application started
+2025-10-22 21:45:48,798 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 21:45:48,813 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 21:46:46,284 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:46:46] "GET /predict HTTP/1.1" 200 -
+2025-10-22 21:46:48,949 - ml.predictor - INFO - Loaded LightGBM models
+2025-10-22 21:46:48,949 - ml.predictor - INFO - Loaded Extra Trees models
+2025-10-22 21:46:49,994 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:46:49,998 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 21:46:50,005 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:46:50,005 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:46:50,011 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:46:50,011 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:46:50,017 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:46:50,017 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:46:50,023 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:46:50,023 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:46:50,023 - ml.predictor - INFO - Generated 5 predictions for New York City
+2025-10-22 21:46:50,023 - routes - INFO - Generated predictions for New York City
+2025-10-22 21:46:50,023 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:46:50] "POST /api/predict HTTP/1.1" 200 -
+2025-10-22 21:47:02,507 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:47:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-22 21:47:05,047 - ml.predictor - INFO - Loaded LightGBM models
+2025-10-22 21:47:05,048 - ml.predictor - INFO - Loaded Extra Trees models
+2025-10-22 21:47:06,493 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:47:06,502 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 21:47:06,510 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:47:06,510 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:47:06,518 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:47:06,518 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:47:06,524 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:47:06,524 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:47:06,530 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:47:06,530 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:47:06,530 - ml.predictor - INFO - Generated 5 predictions for New York City
+2025-10-22 21:47:06,530 - routes - INFO - Generated predictions for New York City
+2025-10-22 21:47:06,531 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:47:06] "POST /api/predict HTTP/1.1" 200 -
+2025-10-22 21:49:11,809 - app - INFO - Application started
+2025-10-22 21:49:20,387 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 21:49:20,388 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 21:49:20,388 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 21:49:20,783 - app - INFO - Application started
+2025-10-22 21:49:27,446 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 21:49:27,461 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 21:49:27,510 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:49:27] "GET /predict HTTP/1.1" 200 -
+2025-10-22 21:49:27,554 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:49:27] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-22 21:49:30,681 - ml.predictor - INFO - Loaded LightGBM models
+2025-10-22 21:49:30,682 - ml.predictor - INFO - Loaded Extra Trees models
+2025-10-22 21:49:31,855 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:49:31,859 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 21:49:31,865 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:49:31,866 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:49:31,882 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:49:31,883 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:49:31,894 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:49:31,894 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:49:31,903 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:49:31,903 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:49:31,904 - ml.predictor - INFO - Generated 5 predictions for New York City
+2025-10-22 21:49:31,904 - routes - INFO - Generated predictions for New York City
+2025-10-22 21:49:31,906 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:49:31] "POST /api/predict HTTP/1.1" 200 -
+2025-10-22 21:51:06,738 - app - INFO - Application started
+2025-10-22 21:51:15,836 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 21:51:15,836 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 21:51:15,837 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 21:51:16,232 - app - INFO - Application started
+2025-10-22 21:51:22,662 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 21:51:22,675 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 21:53:24,116 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:53:24] "GET /predict HTTP/1.1" 200 -
+2025-10-22 21:53:24,157 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:53:24] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-22 21:53:27,831 - ml.predictor - INFO - Loaded LightGBM models
+2025-10-22 21:53:27,832 - ml.predictor - INFO - Loaded Extra Trees models
+2025-10-22 21:53:28,537 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:53:28,542 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 21:53:28,549 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:53:28,550 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:53:28,556 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:53:28,556 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:53:28,562 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:53:28,562 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:53:28,567 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:53:28,567 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:53:28,567 - ml.predictor - INFO - Generated 5 predictions for New York City
+2025-10-22 21:53:28,567 - routes - INFO - Generated predictions for New York City
+2025-10-22 21:53:28,568 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:53:28] "POST /api/predict HTTP/1.1" 200 -
+2025-10-22 21:56:52,243 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:56:52] "GET /predict HTTP/1.1" 200 -
+2025-10-22 21:56:55,954 - ml.predictor - INFO - Loaded LightGBM models
+2025-10-22 21:56:55,954 - ml.predictor - INFO - Loaded Extra Trees models
+2025-10-22 21:56:56,526 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:56:56,527 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 21:56:56,533 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:56:56,533 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:56:56,540 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:56:56,540 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:56:56,546 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:56:56,546 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:56:56,552 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 21:56:56,552 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 21:56:56,552 - ml.predictor - INFO - Generated 5 predictions for Los Angeles
+2025-10-22 21:56:56,553 - routes - INFO - Generated predictions for Los Angeles
+2025-10-22 21:56:56,553 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:56:56] "POST /api/predict HTTP/1.1" 200 -
+2025-10-22 21:57:22,173 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:57:22] "GET /dashboard HTTP/1.1" 200 -
+2025-10-22 21:57:22,272 - routes - ERROR - Error fetching model performance: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 21:57:22,273 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:57:22] "[35m[1mGET /api/models/performance HTTP/1.1[0m" 500 -
+2025-10-22 21:57:22,274 - routes - ERROR - Error fetching prediction history: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 21:57:22,274 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 21:57:22] "[35m[1mGET /api/predictions/history?limit=20 HTTP/1.1[0m" 500 -
+2025-10-22 22:00:53,320 - werkzeug - INFO -  * Detected change in '/Users/trimplingroup/Vijender Weather Forecasting App/ml/predictor.py', reloading
+2025-10-22 22:00:54,148 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 22:00:54,596 - app - INFO - Application started
+2025-10-22 22:01:02,545 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 22:01:02,558 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 22:05:32,862 - werkzeug - INFO -  * Detected change in '/Users/trimplingroup/Vijender Weather Forecasting App/ml/predictor.py', reloading
+2025-10-22 22:05:33,613 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 22:05:34,061 - app - INFO - Application started
+2025-10-22 22:05:38,639 - app - INFO - Application started
+2025-10-22 22:05:46,875 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 22:05:46,875 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 22:05:46,876 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 22:05:47,175 - app - INFO - Application started
+2025-10-22 22:05:53,316 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 22:05:53,329 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 22:05:53,377 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 22:05:53] "GET /dashboard HTTP/1.1" 200 -
+2025-10-22 22:05:53,569 - routes - ERROR - Error fetching model performance: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 22:05:53,570 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 22:05:53] "[35m[1mGET /api/models/performance HTTP/1.1[0m" 500 -
+2025-10-22 22:05:53,573 - routes - ERROR - Error fetching prediction history: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 22:05:53,573 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 22:05:53] "[35m[1mGET /api/predictions/history?limit=20 HTTP/1.1[0m" 500 -
+2025-10-22 22:24:14,077 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 22:24:14] "GET / HTTP/1.1" 200 -
+2025-10-22 22:25:02,153 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 22:25:02] "GET / HTTP/1.1" 200 -
+2025-10-22 22:25:05,410 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 22:25:05] "GET /dashboard HTTP/1.1" 200 -
+2025-10-22 22:25:05,468 - routes - ERROR - Error fetching model performance: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 22:25:05,469 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 22:25:05] "[35m[1mGET /api/models/performance HTTP/1.1[0m" 500 -
+2025-10-22 22:25:05,470 - routes - ERROR - Error fetching prediction history: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 22:25:05,472 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 22:25:05] "[35m[1mGET /api/predictions/history?limit=20 HTTP/1.1[0m" 500 -
+2025-10-22 22:26:01,896 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 22:26:01] "GET /predict HTTP/1.1" 200 -
+2025-10-22 22:26:04,453 - ml.predictor - INFO - Loaded LightGBM models
+2025-10-22 22:26:04,453 - ml.predictor - INFO - Loaded Extra Trees models
+2025-10-22 22:26:05,284 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 22:26:05,286 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 22:26:05,292 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 22:26:05,292 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 22:26:05,298 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 22:26:05,298 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 22:26:05,303 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 22:26:05,303 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 22:26:05,309 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 22:26:05,309 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 22:26:05,309 - ml.predictor - INFO - Generated 5 predictions for New York City
+2025-10-22 22:26:05,309 - routes - INFO - Generated predictions for New York City
+2025-10-22 22:26:05,310 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 22:26:05] "POST /api/predict HTTP/1.1" 200 -
+2025-10-22 22:26:18,987 - ml.predictor - INFO - Loaded LightGBM models
+2025-10-22 22:26:18,988 - ml.predictor - INFO - Loaded Extra Trees models
+2025-10-22 22:26:19,506 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 22:26:19,507 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 22:26:19,513 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 22:26:19,514 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 22:26:19,519 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 22:26:19,520 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 22:26:19,525 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 22:26:19,525 - ml.predictor - ERROR - Error storing prediction: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances? (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2025-10-22 22:26:19,530 - ml.predictor - ERROR - Error in ensemble prediction: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-22 22:26:19,531 - ml.predictor - ERROR - Error storing prediction: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-22 22:26:19,531 - ml.predictor - INFO - Generated 5 predictions for New York City
+2025-10-22 22:26:19,531 - routes - INFO - Generated predictions for New York City
+2025-10-22 22:26:19,531 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 22:26:19] "POST /api/predict HTTP/1.1" 200 -
+2025-10-22 23:21:26,652 - app - INFO - Application started
+2025-10-22 23:22:13,663 - app - INFO - Application started
+2025-10-22 23:22:23,079 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-22 23:22:23,080 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-22 23:22:23,081 - werkzeug - INFO -  * Restarting with stat
+2025-10-22 23:22:23,467 - app - INFO - Application started
+2025-10-22 23:22:34,264 - werkzeug - WARNING -  * Debugger is active!
+2025-10-22 23:22:34,292 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-22 23:22:34,806 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 23:22:34] "GET /predict HTTP/1.1" 200 -
+2025-10-22 23:22:41,653 - routes - INFO - Generated forecast for New York City
+2025-10-22 23:22:41,657 - werkzeug - INFO - 127.0.0.1 - - [22/Oct/2025 23:22:41] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:15:17,347 - app - INFO - Application started
+2025-10-23 15:15:28,029 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-23 15:15:28,030 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-23 15:15:28,031 - werkzeug - INFO -  * Restarting with stat
+2025-10-23 15:15:28,587 - app - INFO - Application started
+2025-10-23 15:15:35,305 - werkzeug - WARNING -  * Debugger is active!
+2025-10-23 15:15:35,319 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-23 15:15:39,192 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:15:39] "GET / HTTP/1.1" 200 -
+2025-10-23 15:15:39,625 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:15:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-10-23 15:15:41,659 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:15:41] "GET /dashboard HTTP/1.1" 200 -
+2025-10-23 15:15:41,762 - routes - ERROR - Error fetching prediction history: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-23 15:15:41,763 - routes - ERROR - Error fetching model performance: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2025-10-23 15:15:41,763 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:15:41] "[35m[1mGET /api/predictions/history?limit=20 HTTP/1.1[0m" 500 -
+2025-10-23 15:15:41,764 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:15:41] "[35m[1mGET /api/models/performance HTTP/1.1[0m" 500 -
+2025-10-23 15:23:27,413 - werkzeug - INFO -  * Detected change in '/Users/trimplingroup/Vijender Weather Forecasting App/generate_visualizations.py', reloading
+2025-10-23 15:23:28,211 - werkzeug - INFO -  * Restarting with stat
+2025-10-23 15:23:28,681 - app - INFO - Application started
+2025-10-23 15:23:42,236 - app - INFO - Application started
+2025-10-23 15:23:50,329 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-23 15:23:50,330 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-23 15:23:50,330 - werkzeug - INFO -  * Restarting with stat
+2025-10-23 15:23:50,698 - app - INFO - Application started
+2025-10-23 15:23:58,147 - werkzeug - WARNING -  * Debugger is active!
+2025-10-23 15:23:58,164 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-23 15:23:58,246 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:23:58] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2025-10-23 15:23:58,290 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:23:58] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-10-23 15:23:58,290 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:23:58] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-10-23 15:23:58,416 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:23:58] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=7N6MbYy458nBsfePTtEL HTTP/1.1" 200 -
+2025-10-23 15:23:58,509 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:23:58] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-10-23 15:24:02,374 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:24:02] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2025-10-23 15:24:02,419 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:24:02] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-23 15:24:02,423 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:24:02] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-23 15:24:02,442 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:24:02] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=7N6MbYy458nBsfePTtEL HTTP/1.1[0m" 304 -
+2025-10-23 15:24:02,460 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:24:02] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-23 15:25:08,821 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:25:08] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2025-10-23 15:25:08,889 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:25:08] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-10-23 15:25:08,892 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:25:08] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-10-23 15:25:08,935 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:25:08] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=7N6MbYy458nBsfePTtEL HTTP/1.1[0m" 304 -
+2025-10-23 15:25:08,964 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:25:08] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-10-23 15:26:30,218 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:26:30] "GET /dashboard HTTP/1.1" 200 -
+2025-10-23 15:26:30,255 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:26:30] "GET /static/images/weather_frequency.png HTTP/1.1" 200 -
+2025-10-23 15:26:30,258 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:26:30] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2025-10-23 15:26:30,272 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:26:30] "GET /static/images/confusion_matrix.png HTTP/1.1" 200 -
+2025-10-23 15:27:25,251 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:27:25] "GET /about HTTP/1.1" 200 -
+2025-10-23 15:27:28,687 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:27:28] "GET /predict HTTP/1.1" 200 -
+2025-10-23 15:27:50,767 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:27:50] "GET /about HTTP/1.1" 200 -
+2025-10-23 15:28:21,508 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:28:21] "GET /dashboard HTTP/1.1" 200 -
+2025-10-23 15:28:21,592 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:28:21] "[36mGET /static/images/weather_frequency.png HTTP/1.1[0m" 304 -
+2025-10-23 15:28:21,599 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:28:21] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2025-10-23 15:28:21,602 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:28:21] "[36mGET /static/images/confusion_matrix.png HTTP/1.1[0m" 304 -
+2025-10-23 15:30:07,721 - app - INFO - Application started
+2025-10-23 15:30:15,953 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-23 15:30:15,953 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-23 15:30:15,954 - werkzeug - INFO -  * Restarting with stat
+2025-10-23 15:30:16,326 - app - INFO - Application started
+2025-10-23 15:30:22,933 - werkzeug - WARNING -  * Debugger is active!
+2025-10-23 15:30:22,947 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-23 15:30:36,622 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:30:36] "GET /dashboard HTTP/1.1" 200 -
+2025-10-23 15:30:36,724 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:30:36] "[36mGET /static/images/weather_frequency.png HTTP/1.1[0m" 304 -
+2025-10-23 15:30:36,725 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:30:36] "[36mGET /static/images/confusion_matrix.png HTTP/1.1[0m" 304 -
+2025-10-23 15:30:36,727 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:30:36] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2025-10-23 15:30:40,814 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:30:40] "GET /predict HTTP/1.1" 200 -
+2025-10-23 15:30:44,828 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:30:44] "GET /about HTTP/1.1" 200 -
+2025-10-23 15:32:36,446 - werkzeug - INFO -  * Detected change in '/Users/trimplingroup/Vijender Weather Forecasting App/routes.py', reloading
+2025-10-23 15:32:37,508 - werkzeug - INFO -  * Restarting with stat
+2025-10-23 15:32:37,990 - app - INFO - Application started
+2025-10-23 15:32:46,157 - werkzeug - WARNING -  * Debugger is active!
+2025-10-23 15:32:46,172 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-23 15:32:51,749 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:32:51] "[33mGET /about HTTP/1.1[0m" 404 -
+2025-10-23 15:32:54,638 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:32:54] "GET / HTTP/1.1" 200 -
+2025-10-23 15:33:01,598 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:01] "GET /dashboard HTTP/1.1" 200 -
+2025-10-23 15:33:01,648 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:01] "[36mGET /static/images/weather_frequency.png HTTP/1.1[0m" 304 -
+2025-10-23 15:33:01,649 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:01] "[36mGET /static/images/confusion_matrix.png HTTP/1.1[0m" 304 -
+2025-10-23 15:33:01,653 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:01] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2025-10-23 15:33:09,678 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:09] "GET /predict HTTP/1.1" 200 -
+2025-10-23 15:33:11,280 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:11] "GET /dashboard HTTP/1.1" 200 -
+2025-10-23 15:33:11,318 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:11] "[36mGET /static/images/weather_frequency.png HTTP/1.1[0m" 304 -
+2025-10-23 15:33:11,320 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:11] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2025-10-23 15:33:11,321 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:11] "[36mGET /static/images/confusion_matrix.png HTTP/1.1[0m" 304 -
+2025-10-23 15:33:13,940 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:13] "GET /predict HTTP/1.1" 200 -
+2025-10-23 15:33:18,590 - routes - INFO - Generated forecast for London
+2025-10-23 15:33:18,594 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:18] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:33:21,801 - routes - INFO - Generated forecast for London
+2025-10-23 15:33:21,804 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:21] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:33:26,401 - routes - INFO - Generated forecast for London
+2025-10-23 15:33:26,403 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:26] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:33:35,568 - routes - INFO - Generated forecast for London
+2025-10-23 15:33:35,571 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:35] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:33:47,929 - routes - INFO - Generated forecast for London
+2025-10-23 15:33:47,935 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:47] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:33:53,061 - routes - INFO - Generated forecast for London
+2025-10-23 15:33:53,065 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:53] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:33:59,753 - routes - ERROR - Prediction error: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/forecast?lat=51.5074&lon=-0.1278&appid=9d54f6d1e31f82f56716bd87829586b6&units=metric (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c53b110>: Failed to resolve 'api.openweathermap.org' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-10-23 15:33:59,758 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:33:59] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-10-23 15:34:06,624 - routes - ERROR - Prediction error: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/forecast?lat=51.5074&lon=-0.1278&appid=9d54f6d1e31f82f56716bd87829586b6&units=metric (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c539450>: Failed to resolve 'api.openweathermap.org' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-10-23 15:34:06,628 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:34:06] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-10-23 15:34:08,802 - routes - ERROR - Prediction error: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/forecast?lat=51.5074&lon=-0.1278&appid=9d54f6d1e31f82f56716bd87829586b6&units=metric (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c5396d0>: Failed to resolve 'api.openweathermap.org' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-10-23 15:34:08,803 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:34:08] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-10-23 15:34:12,438 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:34:12] "GET /predict HTTP/1.1" 200 -
+2025-10-23 15:34:15,661 - routes - ERROR - Prediction error: HTTPSConnectionPool(host='api.openweathermap.org', port=443): Max retries exceeded with url: /data/2.5/forecast?lat=34.0522&lon=-118.2437&appid=9d54f6d1e31f82f56716bd87829586b6&units=metric (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c53b890>: Failed to resolve 'api.openweathermap.org' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-10-23 15:34:15,662 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:34:15] "[35m[1mPOST /api/predict HTTP/1.1[0m" 500 -
+2025-10-23 15:34:23,551 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:34:23,554 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:34:23] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:34:28,939 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:34:28,943 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:34:28] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:34:39,919 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:34:39,923 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:34:39] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:34:42,844 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:34:42,849 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:34:42] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:34:44,931 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:34:44,935 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:34:44] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:34:47,084 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:34:47,089 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:34:47] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:34:49,306 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:34:49,307 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:34:49] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:35:03,036 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:35:03,047 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:35:03] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:35:05,087 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:35:05,090 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:35:05] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:35:18,692 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:35:18,694 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:35:18] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:35:22,666 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:35:22,667 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:35:22] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:35:29,064 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:35:29,069 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:35:29] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:35:33,323 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:35:33,326 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:35:33] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:35:40,942 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:35:40] "GET /predict HTTP/1.1" 200 -
+2025-10-23 15:35:44,069 - routes - INFO - Generated forecast for New York City
+2025-10-23 15:35:44,071 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:35:44] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:36:47,708 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:36:47] "GET /predict HTTP/1.1" 200 -
+2025-10-23 15:36:51,038 - routes - INFO - Generated forecast for Los Angeles
+2025-10-23 15:36:51,042 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:36:51] "POST /api/predict HTTP/1.1" 200 -
+2025-10-23 15:36:55,832 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:36:55] "GET / HTTP/1.1" 200 -
+2025-10-23 15:37:00,404 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:37:00] "GET /predict HTTP/1.1" 200 -
+2025-10-23 15:37:02,332 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:37:02] "GET /dashboard HTTP/1.1" 200 -
+2025-10-23 15:37:02,368 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:37:02] "[36mGET /static/images/weather_frequency.png HTTP/1.1[0m" 304 -
+2025-10-23 15:37:02,369 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:37:02] "[36mGET /static/images/confusion_matrix.png HTTP/1.1[0m" 304 -
+2025-10-23 15:37:02,369 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:37:02] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2025-10-23 15:39:32,777 - werkzeug - INFO -  * Detected change in '/Users/trimplingroup/Vijender Weather Forecasting App/routes.py', reloading
+2025-10-23 15:39:33,714 - werkzeug - INFO -  * Restarting with stat
+2025-10-23 15:39:34,124 - app - INFO - Application started
+2025-10-23 15:39:34,125 - app - INFO - Created directory: ./models/saved_models
+2025-10-23 15:39:34,125 - app - INFO - Created directory: ./data
+2025-10-23 15:39:34,125 - app - INFO - Created directory: ./data/raw
+2025-10-23 15:39:34,125 - app - INFO - Created directory: ./data/processed
+2025-10-23 15:39:34,225 - werkzeug - WARNING -  * Debugger is active!
+2025-10-23 15:39:34,237 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-23 15:39:44,386 - werkzeug - INFO -  * Detected change in '/Users/trimplingroup/Vijender Weather Forecasting App/routes.py', reloading
+2025-10-23 15:39:44,461 - werkzeug - INFO -  * Restarting with stat
+2025-10-23 15:39:44,846 - app - INFO - Application started
+2025-10-23 15:39:44,932 - werkzeug - WARNING -  * Debugger is active!
+2025-10-23 15:39:44,947 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-23 15:40:00,193 - werkzeug - INFO -  * Detected change in '/Users/trimplingroup/Vijender Weather Forecasting App/routes.py', reloading
+2025-10-23 15:40:00,261 - werkzeug - INFO -  * Restarting with stat
+2025-10-23 15:40:00,645 - app - INFO - Application started
+2025-10-23 15:40:00,730 - werkzeug - WARNING -  * Debugger is active!
+2025-10-23 15:40:00,739 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-23 15:43:25,456 - app - INFO - Application started
+2025-10-23 15:43:25,457 - app - INFO - Created directory: ./models/saved_models
+2025-10-23 15:43:25,457 - app - INFO - Created directory: ./data
+2025-10-23 15:43:25,457 - app - INFO - Created directory: ./data/raw
+2025-10-23 15:43:25,457 - app - INFO - Created directory: ./data/processed
+2025-10-23 15:43:25,734 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.31.103:5000
+2025-10-23 15:43:25,734 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-23 15:43:25,742 - werkzeug - INFO -  * Restarting with stat
+2025-10-23 15:43:26,051 - app - INFO - Application started
+2025-10-23 15:43:26,120 - werkzeug - WARNING -  * Debugger is active!
+2025-10-23 15:43:26,129 - werkzeug - INFO -  * Debugger PIN: 903-784-013
+2025-10-23 15:43:29,875 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:43:29] "GET /dashboard HTTP/1.1" 200 -
+2025-10-23 15:43:29,961 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:43:29] "[36mGET /static/images/weather_frequency.png HTTP/1.1[0m" 304 -
+2025-10-23 15:43:29,962 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:43:29] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2025-10-23 15:43:30,025 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:43:30] "[36mGET /static/images/confusion_matrix.png HTTP/1.1[0m" 304 -
+2025-10-23 15:43:33,103 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:43:33] "GET / HTTP/1.1" 200 -
+2025-10-23 15:43:36,155 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:43:36] "GET /dashboard HTTP/1.1" 200 -
+2025-10-23 15:43:36,189 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:43:36] "[36mGET /static/images/weather_frequency.png HTTP/1.1[0m" 304 -
+2025-10-23 15:43:36,192 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:43:36] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2025-10-23 15:43:36,196 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:43:36] "[36mGET /static/images/confusion_matrix.png HTTP/1.1[0m" 304 -
+2025-10-23 15:43:38,398 - werkzeug - INFO - 127.0.0.1 - - [23/Oct/2025 15:43:38] "GET /predict HTTP/1.1" 200 -

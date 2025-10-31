@@ -1,0 +1,310 @@
+{% extends "base.html" %}
+
+{% block title %}Home - AI Weather Forecasting{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="text-center mb-5 hero-section">
+            <div class="hero-icon mb-4">
+                <i class="fas fa-cloud-sun" style="font-size: 5rem; animation: float 3s ease-in-out infinite;"></i>
+            </div>
+            <h1 class="display-2 fw-bold mb-3" style="background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                AI-Powered Weather Intelligence
+            </h1>
+            <p class="lead fs-3 mb-4" style="color: #cbd5e1;">Predict Extreme Weather Events with Machine Learning</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="/predict" class="btn btn-primary btn-lg px-5">
+                    <i class="fas fa-brain"></i> Start Prediction
+                </a>
+                <a href="/dashboard" class="btn btn-outline-primary btn-lg px-5">
+                    <i class="fas fa-chart-bar"></i> View Analytics
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Feature Cards -->
+<div class="row mb-5 mt-5">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 feature-card">
+            <div class="card-body text-center p-4">
+                <div class="weather-icon mb-3">
+                    <i class="fas fa-temperature-high"></i>
+                </div>
+                <h3 class="card-title fw-bold mb-3" style="color: #f1f5f9;">Heatwave Detection</h3>
+                <p class="card-text" style="color: #cbd5e1; line-height: 1.8;">
+                    Advanced AI algorithms predict extreme temperature events with high accuracy,
+                    providing early warnings for heatwaves and heat-related risks.
+                </p>
+                <div class="mt-4">
+                    <span class="badge" style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; padding: 0.5rem 1rem; border-radius: 20px;">
+                        <i class="fas fa-fire"></i> 95% Accuracy
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 feature-card">
+            <div class="card-body text-center p-4">
+                <div class="weather-icon mb-3">
+                    <i class="fas fa-wind"></i>
+                </div>
+                <h3 class="card-title fw-bold mb-3" style="color: #f1f5f9;">Storm Prediction</h3>
+                <p class="card-text" style="color: #cbd5e1; line-height: 1.8;">
+                    Predict severe storms and high wind events using ensemble machine learning
+                    models trained on millions of historical weather patterns.
+                </p>
+                <div class="mt-4">
+                    <span class="badge" style="background: rgba(6, 182, 212, 0.2); color: #67e8f9; padding: 0.5rem 1rem; border-radius: 20px;">
+                        <i class="fas fa-bolt"></i> Real-time Updates
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 feature-card">
+            <div class="card-body text-center p-4">
+                <div class="weather-icon mb-3">
+                    <i class="fas fa-cloud-showers-heavy"></i>
+                </div>
+                <h3 class="card-title fw-bold mb-3" style="color: #f1f5f9;">Flood Forecasting</h3>
+                <p class="card-text" style="color: #cbd5e1; line-height: 1.8;">
+                    Identify flood risks through precipitation analysis and AI-driven pattern
+                    recognition for better disaster preparedness and response.
+                </p>
+                <div class="mt-4">
+                    <span class="badge" style="background: rgba(99, 102, 241, 0.2); color: #a5b4fc; padding: 0.5rem 1rem; border-radius: 20px;">
+                        <i class="fas fa-shield-alt"></i> Early Warning
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Start Section -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="mb-0"><i class="fas fa-rocket"></i> Get Started in 4 Easy Steps</h3>
+            </div>
+            <div class="card-body p-4">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h4 class="mb-4" style="color: #f1f5f9;">
+                            <i class="fas fa-compass" style="color: #6366f1;"></i> How It Works
+                        </h4>
+                        <div class="timeline">
+                            <div class="timeline-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="step-number">1</div>
+                                    <div class="ms-3">
+                                        <h6 style="color: #f1f5f9;">Enter Location</h6>
+                                        <p style="color: #94a3b8; font-size: 0.95rem;">Provide coordinates or select from quick locations</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="step-number">2</div>
+                                    <div class="ms-3">
+                                        <h6 style="color: #f1f5f9;">Select Forecast Period</h6>
+                                        <p style="color: #94a3b8; font-size: 0.95rem;">Choose 1 to 7 days for prediction range</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="step-number">3</div>
+                                    <div class="ms-3">
+                                        <h6 style="color: #f1f5f9;">AI Analysis</h6>
+                                        <p style="color: #94a3b8; font-size: 0.95rem;">Our models process weather data in real-time</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="d-flex align-items-start">
+                                    <div class="step-number">4</div>
+                                    <div class="ms-3">
+                                        <h6 style="color: #f1f5f9;">View Risk Analysis</h6>
+                                        <p style="color: #94a3b8; font-size: 0.95rem;">Get detailed predictions and recommendations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="mb-4" style="color: #f1f5f9;">
+                            <i class="fas fa-brain" style="color: #8b5cf6;"></i> Powered By Advanced AI
+                        </h4>
+                        <div class="ai-models">
+                            <div class="model-badge mb-3">
+                                <i class="fas fa-project-diagram text-primary"></i>
+                                <div class="ms-3">
+                                    <strong style="color: #f1f5f9;">Bi-LSTM Networks</strong>
+                                    <p class="mb-0" style="color: #94a3b8; font-size: 0.9rem;">Sequential pattern analysis</p>
+                                </div>
+                            </div>
+                            <div class="model-badge mb-3">
+                                <i class="fas fa-bolt text-warning"></i>
+                                <div class="ms-3">
+                                    <strong style="color: #f1f5f9;">LightGBM</strong>
+                                    <p class="mb-0" style="color: #94a3b8; font-size: 0.9rem;">Fast gradient boosting</p>
+                                </div>
+                            </div>
+                            <div class="model-badge mb-3">
+                                <i class="fas fa-tree text-success"></i>
+                                <div class="ms-3">
+                                    <strong style="color: #f1f5f9;">Extra Trees</strong>
+                                    <p class="mb-0" style="color: #94a3b8; font-size: 0.9rem;">Ensemble classification</p>
+                                </div>
+                            </div>
+                            <div class="model-badge">
+                                <i class="fas fa-network-wired text-info"></i>
+                                <div class="ms-3">
+                                    <strong style="color: #f1f5f9;">Temporal Fusion Transformer</strong>
+                                    <p class="mb-0" style="color: #94a3b8; font-size: 0.9rem;">Multi-horizon forecasting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="/predict" class="btn btn-primary btn-lg px-5 py-3">
+                        <i class="fas fa-cloud-sun-rain me-2"></i> Start Your Prediction Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Statistics Section -->
+<div class="row mt-5">
+    <div class="col-md-3 mb-4">
+        <div class="card text-center stat-card">
+            <div class="card-body p-4">
+                <div class="stat-icon mb-3">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h2 class="fw-bold mb-2" style="background: linear-gradient(135deg, #6366f1, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">5+</h2>
+                <p class="mb-0" style="color: #cbd5e1;">AI Models</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-4">
+        <div class="card text-center stat-card">
+            <div class="card-body p-4">
+                <div class="stat-icon mb-3">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h2 class="fw-bold mb-2" style="background: linear-gradient(135deg, #10b981, #059669); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">7 Days</h2>
+                <p class="mb-0" style="color: #cbd5e1;">Forecast Range</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-4">
+        <div class="card text-center stat-card">
+            <div class="card-body p-4">
+                <div class="stat-icon mb-3">
+                    <i class="fas fa-cloud-bolt"></i>
+                </div>
+                <h2 class="fw-bold mb-2" style="background: linear-gradient(135deg, #06b6d4, #0891b2); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">3</h2>
+                <p class="mb-0" style="color: #cbd5e1;">Event Types</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-4">
+        <div class="card text-center stat-card">
+            <div class="card-body p-4">
+                <div class="stat-icon mb-3">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h2 class="fw-bold mb-2" style="background: linear-gradient(135deg, #f59e0b, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">24/7</h2>
+                <p class="mb-0" style="color: #cbd5e1;">Real-time Data</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .step-number {
+        min-width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+    }
+    
+    .model-badge {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        background: rgba(51, 65, 85, 0.5);
+        border-radius: 12px;
+        border: 1px solid rgba(99, 102, 241, 0.2);
+        transition: all 0.3s ease;
+    }
+    
+    .model-badge:hover {
+        background: rgba(99, 102, 241, 0.1);
+        border-color: rgba(99, 102, 241, 0.4);
+        transform: translateX(10px);
+    }
+    
+    .model-badge i {
+        font-size: 1.5rem;
+    }
+    
+    .stat-card {
+        transition: all 0.3s ease;
+    }
+    
+    .stat-card:hover {
+        transform: translateY(-10px) scale(1.05);
+    }
+    
+    .stat-icon i {
+        font-size: 2.5rem;
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .feature-card {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .feature-card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    
+    .feature-card:hover::before {
+        opacity: 1;
+    }
+</style>
+{% endblock %}

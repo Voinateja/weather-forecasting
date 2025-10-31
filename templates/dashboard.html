@@ -1,0 +1,333 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - AI Weather Forecasting{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="text-white mb-4">
+            <h1><i class="fas fa-chart-line"></i> Model Performance Dashboard</h1>
+            <p class="lead">RandomForestClassifier Results & Analytics</p>
+        </div>
+    </div>
+</div>
+
+<!-- Model Performance Summary -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0"><i class="fas fa-brain"></i> Model Information</h4>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-3">
+                        <div class="card bg-gradient" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);">
+                            <div class="card-body">
+                                <h2 class="text-primary fw-bold">78.49%</h2>
+                                <p class="mb-0" style="color: var(--text-light);">Model Accuracy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card bg-gradient" style="background: linear-gradient(135deg, rgba(46, 204, 113, 0.2) 0%, rgba(39, 174, 96, 0.2) 100%);">
+                            <div class="card-body">
+                                <h2 class="text-success fw-bold">78%</h2>
+                                <p class="mb-0" style="color: var(--text-light);">Weighted Precision</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card bg-gradient" style="background: linear-gradient(135deg, rgba(52, 152, 219, 0.2) 0%, rgba(41, 128, 185, 0.2) 100%);">
+                            <div class="card-body">
+                                <h2 class="text-info fw-bold">78%</h2>
+                                <p class="mb-0" style="color: var(--text-light);">Weighted Recall</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="card bg-gradient" style="background: linear-gradient(135deg, rgba(241, 196, 15, 0.2) 0%, rgba(243, 156, 18, 0.2) 100%);">
+                            <div class="card-body">
+                                <h2 class="text-warning fw-bold">78%</h2>
+                                <p class="mb-0" style="color: var(--text-light);">Weighted F1-Score</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                        <span class="badge bg-primary" style="padding: 0.5rem 1rem; font-size: 1rem;">
+                            <i class="fas fa-cog"></i> Model: RandomForestClassifier
+                        </span>
+                        <span class="badge bg-secondary ms-2" style="padding: 0.5rem 1rem; font-size: 1rem;">
+                            <i class="fas fa-database"></i> Test Samples: 1,757
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Classification Report -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0"><i class="fas fa-table"></i> Classification Report</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Weather Type</th>
+                                <th>Precision</th>
+                                <th>Recall</th>
+                                <th>F1-Score</th>
+                                <th>Support</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fas fa-cloud"></i> <strong>Cloudy</strong></td>
+                                <td><span class="badge bg-primary">0.76</span></td>
+                                <td><span class="badge bg-info">0.82</span></td>
+                                <td><span class="badge bg-success">0.79</span></td>
+                                <td>760</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-cloud-rain"></i> <strong>Drizzle</strong></td>
+                                <td><span class="badge bg-primary">0.83</span></td>
+                                <td><span class="badge bg-info">0.38</span></td>
+                                <td><span class="badge bg-success">0.53</span></td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-smog"></i> <strong>Fog</strong></td>
+                                <td><span class="badge bg-primary">0.88</span></td>
+                                <td><span class="badge bg-info">0.91</span></td>
+                                <td><span class="badge bg-success">0.89</span></td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-question-circle"></i> <strong>Other</strong></td>
+                                <td><span class="badge bg-primary">0.67</span></td>
+                                <td><span class="badge bg-info">0.50</span></td>
+                                <td><span class="badge bg-success">0.57</span></td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-cloud-showers-heavy"></i> <strong>Rainy</strong></td>
+                                <td><span class="badge bg-primary">0.67</span></td>
+                                <td><span class="badge bg-info">0.50</span></td>
+                                <td><span class="badge bg-success">0.57</span></td>
+                                <td>124</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-snowflake"></i> <strong>Snowy</strong></td>
+                                <td><span class="badge bg-primary">0.78</span></td>
+                                <td><span class="badge bg-info">0.80</span></td>
+                                <td><span class="badge bg-success">0.79</span></td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-sun"></i> <strong>Sunny</strong></td>
+                                <td><span class="badge bg-primary">0.82</span></td>
+                                <td><span class="badge bg-info">0.79</span></td>
+                                <td><span class="badge bg-success">0.81</span></td>
+                                <td>686</td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td><strong>Accuracy</strong></td>
+                                <td colspan="2"></td>
+                                <td><span class="badge bg-warning text-dark">0.78</span></td>
+                                <td>1757</td>
+                            </tr>
+                            <tr class="table-light">
+                                <td><strong>Macro Avg</strong></td>
+                                <td><span class="badge bg-primary">0.77</span></td>
+                                <td><span class="badge bg-info">0.67</span></td>
+                                <td><span class="badge bg-success">0.71</span></td>
+                                <td>1757</td>
+                            </tr>
+                            <tr class="table-light">
+                                <td><strong>Weighted Avg</strong></td>
+                                <td><span class="badge bg-primary">0.78</span></td>
+                                <td><span class="badge bg-info">0.78</span></td>
+                                <td><span class="badge bg-success">0.78</span></td>
+                                <td>1757</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Visualizations -->
+<div class="row mt-4">
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <h4 class="mb-0"><i class="fas fa-chart-bar"></i> Frequency of Weather Types</h4>
+            </div>
+            <div class="card-body text-center">
+                <img src="{{ url_for('static', filename='images/weather_frequency.png') }}" 
+                     alt="Frequency of Weather Types" 
+                     class="img-fluid"
+                     style="max-height: 400px; width: auto;">
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <h4 class="mb-0"><i class="fas fa-fire"></i> Feature Correlation Heatmap</h4>
+            </div>
+            <div class="card-body text-center">
+                <img src="{{ url_for('static', filename='images/correlation_heatmap.png') }}" 
+                     alt="Feature Correlation Heatmap" 
+                     class="img-fluid"
+                     style="max-height: 400px; width: auto;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0"><i class="fas fa-th"></i> Confusion Matrix</h4>
+            </div>
+            <div class="card-body text-center">
+                <img src="{{ url_for('static', filename='images/confusion_matrix.png') }}" 
+                     alt="Confusion Matrix" 
+                     class="img-fluid"
+                     style="max-height: 600px; width: auto;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Model Insights -->
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0"><i class="fas fa-lightbulb"></i> Key Insights</h4>
+            </div>
+            <div class="card-body">
+                <ul class="list-unstyled">
+                    <li class="mb-3" style="color: var(--text-light);">
+                        <i class="fas fa-check-circle text-success"></i>
+                        <strong style="color: #fff;">Best Performance:</strong> Fog classification (F1: 0.89)
+                    </li>
+                    <li class="mb-3" style="color: var(--text-light);">
+                        <i class="fas fa-check-circle text-success"></i>
+                        <strong style="color: #fff;">High Accuracy Classes:</strong> Cloudy, Sunny, and Snowy
+                    </li>
+                    <li class="mb-3" style="color: var(--text-light);">
+                        <i class="fas fa-exclamation-triangle text-warning"></i>
+                        <strong style="color: #fff;">Low Support Classes:</strong> Drizzle (13) and Other (4)
+                    </li>
+                    <li class="mb-3" style="color: var(--text-light);">
+                        <i class="fas fa-info-circle text-info"></i>
+                        <strong style="color: #fff;">Overall Performance:</strong> 78.49% accuracy across all weather types
+                    </li>
+                    <li class="mb-3" style="color: var(--text-light);">
+                        <i class="fas fa-chart-line text-primary"></i>
+                        <strong style="color: #fff;">Balanced Metrics:</strong> Consistent precision, recall, and F1-scores
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0"><i class="fas fa-cogs"></i> Model Details</h4>
+            </div>
+            <div class="card-body" style="background-color: var(--card-bg);">
+                <table class="table table-sm table-dark">
+                    <tbody>
+                        <tr>
+                            <td><strong>Algorithm:</strong></td>
+                            <td>RandomForestClassifier</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total Samples:</strong></td>
+                            <td>1,757</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Number of Classes:</strong></td>
+                            <td>7 weather types</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Model Accuracy:</strong></td>
+                            <td><span class="badge bg-success">78.49%</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Weighted F1-Score:</strong></td>
+                            <td><span class="badge bg-success">0.78</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Most Common Class:</strong></td>
+                            <td>Cloudy (760 samples)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Least Common Class:</strong></td>
+                            <td>Other (4 samples)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .table-hover tbody tr:hover {
+        background-color: rgba(99, 102, 241, 0.1);
+    }
+    
+    .card {
+        transition: transform 0.2s;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .badge {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
+    }
+    
+    .bg-gradient {
+        border: 1px solid rgba(99, 102, 241, 0.3);
+    }
+    
+    .table-dark th {
+        background-color: #1e293b;
+        color: #e2e8f0;
+    }
+    
+    .table-bordered {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .table-bordered td,
+    .table-bordered th {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+</style>
+{% endblock %}
